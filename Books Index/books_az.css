@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    /* background-image: linear-gradient(#eee, #222); */
+    background-image: linear-gradient(to right, #2222 , #222);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body , html {
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 65%;
+    height: 115vh;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+.header {
+    height: 5%;
+    border: 1px solid #ccc;
+}
+
+.logo {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-left: 15px;
+}
+
+.head-txt {
+    color: #ccc;
+    font-size: 2.3rem;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.book_cotainer {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding-top: 10px;
+    /* background-color: rgb(174, 0, 255); */
+}
+.book_cotainer h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: aqua;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.book-common {
+    width: 143px;
+    margin: 3px 5px;
+    height: 263px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid green;
+}
+
+.phto_container a {
+    width: 100%;
+    text-decoration: none;
+    height: 165px;
+    transform: translateY(-4px);
+    color: bisque;
+    align-self: flex-start;
+    text-align: center;
+    background-position: center;
+    transition: transform .2s;
+    background-size: 139px 157px;
+    background-image: url("https://cdn.bkmkitap.com/ben-kirke-8828538-40-B.jpg");
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    display: block;
+}
+.phto_container a:hover {
+    transform: scale(1.1); 
+}
+
+.book-common p {
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 1px;
+}
+
+.book-common h3
+ {
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    color: antiquewhite;
+    z-index: -1;
+    width: 100%;
+    font-family: 'Dongle', sans-serif;
+    height: 57px;
+    bottom: 43px;
+    padding: 5px 10px 0 10px;
+    border: 1px solid rgba(105, 103, 103, 0.8);
+}
+.phto_container
+ {
+    width: 100%;
+    height: 165px;
+    top: 0;
+    position: absolute;
+
+ }
+
+.book-7 h3
+ {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.book-13 h3
+ {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+ }
+.book-1 h3 {
+    padding-top: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.book-10 h3 {
+    padding-top: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.price {
+    border: 1px solid #eee;
+    padding: 6px 16px;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    transition: 700ms all;
+    text-decoration: none;
+}
+
+.price:hover {
+    background-color: #eee;
+    border: 1px solid #222;
+    color: #222;
+}
+
+
+/* book photos */
+.book-1 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/ben-kirke-8828538-40-B.jpg);
+}
+.book-2 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/hayvan-ciftligi-9244507-79-B.jpg);
+}
+.book-3 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/nineteen-eighty-four-9437611-51-O.jpg);
+}
+.book-4 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/bogulmamak-icin-561711-9451722-56-B.jpg);
+}
+.book-5 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/katalonyaya-selam-513322-7628087-51-B.jpg);
+}
+.book-6 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/veronika-olmek-istiyor-9182713-79-B.jpg);
+}
+.book-7 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/the-spy-3948764-44-B.jpg);
+}
+.book-8 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/cadinin-yuregi-9455673-69-B.jpg);
+}
+.book-9 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/gun-batimi-avcilari-832636-10-B.jpg);
+}
+.book-10 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/ruhlar-golu-9445248-53-B.jpg);
+}
+.book-11 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/vampirler-dagi-673023-42-B.jpg);
+}
+.book-12 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/golgelerin-hukumdari-6915229-98-B.jpg);
+}
+.book-13 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/koyasan-675149-36-B.jpg);
+}
+.book-14 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/dilin-kisa-tarihi-9433261-34-B.jpg);
+}
+.book-15 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/agirliksiz-9169555-57-B.jpg);
+}
+.book-16 .phto_container a {
+    background-image: url(https://cdn.bkmkitap.com/sokak-nobetcileri-9373447-52-B.jpg);
+}
+/* book photo */
+
+
+/* common media */
+@media screen and (max-width: 1870px) and (min-width: 1000px) {
+    .book-common h3 {
+        padding: 9px 13px 0 13px;
+      }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .book-common h3 {
+        font-size: 1.4rem;
+    }
+
+    .book_cotainer {
+        height: auto;
+        padding-top: 0;
+    }
+}
+/* commmon media */
+
+@media screen and (max-width: 1870px) and (min-width: 1798px) {
+
+.wrap {
+    width: 68%;
+    height: 130vh;
+}
+
+}
+
+@media screen and (max-width: 1797px) and (min-width: 1750px) {
+
+    .wrap {
+        width: 67%;
+        height: 130vh;
+    }
+
+    .books {
+        transform: translateX(0);
+        justify-content: center;
+        margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1749px) and (min-width: 1700px) {
+    .books {
+        transform: translateX(0);
+         justify-content: center;
+         margin: 40px 0 0 0;
+    }
+
+    .wrap {
+        height: 129vh;
+    }
+  
+}
+
+@media screen and (max-width: 1699px) and (min-width: 1500px) {
+    .wrap {
+        height: 132vh;
+        width: 67%;
+    }
+    .books {
+        transform: translateX(0);
+         justify-content: center;
+         margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1410px) {
+    .book-common {
+        height: 250px;
+    }
+
+    .phto_container a {
+        height: 163px;
+        background-size: 139px 154px;
+    }
+
+    .wrap {
+        height: 128vh;
+        width: 69%;
+    }
+}
+
+@media screen and (max-width: 1409px) and (min-width: 1350px) {
+    .wrap {
+        height: 130vh;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1349px) and (min-width: 1300px) {
+    .wrap {
+        height: 130vh;
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1250px) {
+    .wrap {
+        height: 130vh;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1249px) and (min-width: 1200px) {
+    .wrap {
+        height: 130vh;
+        width: 78%;
+    }
+    .book-common {
+        margin: 3px 4px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1150px) {
+    .wrap {
+        height: 130vh;
+        width: 80%;
+    }
+    .book-common {
+        margin: 3px 4px;
+    }
+}
+
+@media screen and (max-width: 1149px) and (min-width: 1015px) {
+    .wrap {
+        height: 130vh;
+        width: 80%;
+    }
+    .book-common {
+        margin: 3px 4px;
+        width: 140px;
+        height: 257px;
+        background-size: 139px 156px;
+    }
+
+    .book-common h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1114px) and (min-width: 1100px) {
+    .book-common {
+        margin: 3px 4px;
+        width: 138px;
+        height: 255px;
+        background-size: 139px 154px;
+    }
+
+    .book-common h3 {
+        font-size: 1.4rem;
+        padding-top: 11px;
+    }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 1050px) {
+     .wrap {
+         min-height: 157vh;
+         width: 79%;
+     }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 1020px) {
+    .book-common {
+        margin: 3px 4px;
+        width: 140px;
+        height: 257px;
+        background-size: 139px 156px;
+    }
+    .wrap {
+       height: 159vh;
+    }
+}
+
+@media screen and (max-width: 1019px) and (min-width: 1000px) {
+    .book-common {
+        margin: 3px 4px;
+        width: 140px;
+        height: 257px;
+        background-size: 139px 156px;
+    }
+    .wrap {
+        height: 161vh;
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 999px) and (min-width: 940px) {
+    .wrap {
+        height: 167vh;
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 939px) and (min-width: 900px) {
+    .wrap {
+        height: 174vh;
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 850px) {
+    .wrap {
+        height: 174vh;
+        width: 74%;
+    }
+    .book-common {
+        margin: 4px 6px;
+        width: 140px;
+        height: 257px;
+        background-size: 139px 156px;
+    }
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .wrap {
+        height: 250vh;
+    }
+    .header {
+        height: 73px;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+    .wrap {
+        height: 570vh;
+    }
+    .header {
+        height: 70px;
+    }
+    .price {
+      font-size: 1.4rem;
+    }
+
+    .book-common p {
+        font-size: 0rem;
+    }
+
+    .book-common h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+
